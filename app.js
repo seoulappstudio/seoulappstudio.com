@@ -14,16 +14,10 @@ const bubbleContainer = document.querySelector(".bubbles-container");
 setInterval(() => {
     const bubble = document.createElement("div");
     bubble.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-    bubble.style.width = sizes[Math.floor(Math.random() * sizes.length)];
+    bubble.style.width = sizes[Math.floor(Math.random(0.1, 0.9) * sizes.length)];
     bubble.style.height = bubble.style.width;
     bubble.style.left = Math.floor(Math.random() * 100) + '%';
     bubble.classList.add("bubble");
-    // bubble.style.left = Math.random() * 100 + "vw";
-    // bubble.style.animationDuration = Math.random() * 5 + 1 + "s";
-    // bubble.style.opacity = Math.random();
-    // bubble.style.width = Math.random() * 6 + 4 + "px";
-    // bubble.style.height = bubble.style.width;
-
     bubbleContainer.appendChild(bubble);
 
     setTimeout(() => {
