@@ -14,9 +14,9 @@ const bubbleContainer = document.querySelector(".bubbles-container");
 setInterval(() => {
     const bubble = document.createElement("div");
     bubble.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-    bubble.style.width = sizes[Math.floor(Math.random(0.1, 0.9) * sizes.length)];
+    bubble.style.width = sizes[Math.floor(Math.random() * sizes.length)];
     bubble.style.height = bubble.style.width;
-    bubble.style.left = Math.floor(Math.random() * 100) + '%';
+    bubble.style.left = Math.floor(Math.random() * 90) + '%';
     bubble.classList.add("bubble");
     bubbleContainer.appendChild(bubble);
 
