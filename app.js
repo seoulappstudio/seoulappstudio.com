@@ -26,22 +26,19 @@ setInterval(() => {
   }, 6000);
 }, 500);
 
-// Function to show the preview image animation
-function showPreviewImageAnimation() {
-  const previewImage = document.querySelector(".preview-image");
+const previewImages = document.querySelectorAll(".preview-image");
 
-  if (previewImage) {
-    const rect = previewImage.getBoundingClientRect();
-    const windowHeight = window.innerHeight;
+window.addEventListener("scroll", () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-    if (rect.top < windowHeight) {
+  previewImages.forEach((previewImage) => {
+    const imageTop = previewImage.offsetTop;
+    const imageHeight = previewImage.offsetHeight;
+
+    if (scrollTop + window.innerHeight > imageTop + imageHeight / 3) {
       previewImage.classList.add("visible");
+    } else {
+      previewImage.classList.remove("visible");
     }
-  }
-}
-
-// Add scroll event listener
-window.addEventListener("scroll", showPreviewImageAnimation);
-
-// Call the function on page load
-showPreviewImageAnimation();
+  });
+});
