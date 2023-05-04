@@ -14,6 +14,12 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png" />
   <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png" />
   <link rel="manifest" href="/images/favicon/site.webmanifest" />
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
+    integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx"
+    crossorigin="anonymous"></script>
+  <script>
+    Kakao.init('c4b546e026d21868de35a6b5cdab95b2'); // 사용하려는 앱의 JavaScript 키 입력
+  </script>
 </head>
 
 <body>
@@ -27,6 +33,17 @@
       <p>010-3265-6909</p>
     </div>
   </div>
+  <a id="kakaotalk-sharing-btn" href="javascript:;">
+    <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
+      alt="카카오톡 공유 보내기 버튼" />
+  </a>
+  <script src="kakao-sharing.js"></script>
+  <script>
+    // 페이지가 로드되면 카카오톡 공유 기능 초기화
+    window.addEventListener('load', function () {
+      initKakaoSharing();
+    });
+  </script>
   <div class="portfolio-container">
     <a href="https://sassyai.seoulappstudio.com/" target="_blank">
       <div class="preview-container">
@@ -53,28 +70,6 @@
       </div>
     </a>
   </div>
-  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.1.0/kakao.min.js"
-    integrity="sha384-dpu02ieKC6NUeKFoGMOKz6102CLEWi9+5RQjWSV0ikYSFFd8M3Wp2reIcquJOemx"
-    crossorigin="anonymous"></script>
-  <script>
-    Kakao.init('api키'); // 사용하려는 앱의 JavaScript 키 입력
-  </script>
-
-  <a id="kakaotalk-sharing-btn" href="javascript:;">
-    <img src="https://developers.kakao.com/assets/img/about/logos/kakaotalksharing/kakaotalk_sharing_btn_medium.png"
-      alt="카카오톡 공유 보내기 버튼" />
-  </a>
-
-  <script>
-    Kakao.Share.createCustomButton({
-      container: '#kakaotalk-sharing-btn',
-      templateId: 93311,
-      templateArgs: {
-        title: '제목 영역입니다.',
-        description: '설명 영역입니다.',
-      },
-    });
-  </script>
   <script src="app.js"></script>
 </body>
 
