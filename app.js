@@ -28,17 +28,31 @@ setInterval(() => {
 
 const previewImages = document.querySelectorAll(".preview-image");
 
-window.addEventListener("scroll", () => {
-  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// window.addEventListener("scroll", () => {
+//   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-  previewImages.forEach((previewImage) => {
-    const imageTop = previewImage.offsetTop;
-    const imageHeight = previewImage.offsetHeight;
+//   previewImages.forEach((previewImage) => {
+//     const imageTop = previewImage.offsetTop;
+//     const imageHeight = previewImage.offsetHeight;
 
-    if (scrollTop + window.innerHeight > imageTop + imageHeight / 3) {
-      previewImage.classList.add("visible");
+//     if (scrollTop + window.innerHeight > imageTop + imageHeight / 3) {
+//       previewImage.classList.add("visible");
+//     } else {
+//       previewImage.classList.remove("visible");
+//     }
+//   });
+// });
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("visible");
     } else {
-      previewImage.classList.remove("visible");
+      entry.target.classList.remove("visible");
     }
   });
+});
+
+previewImages.forEach((previewImage) => {
+  observer.observe(previewImage);
 });
