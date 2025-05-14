@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -10,4 +12,32 @@
 body {
   color: rgb(var(--foreground-rgb));
   background: rgb(var(--background-rgb));
+  font-family: "Pretendard", -apple-system, BlinkMacSystemFont, system-ui,
+    Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif;
+}
+
+/* 추가 스타일 */
+input,
+select,
+textarea {
+  @apply rounded-md border-gray-300 shadow-sm;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  @apply border-blue-500 ring ring-blue-200 ring-opacity-50;
+}
+
+.btn {
+  @apply px-4 py-2 rounded-md transition duration-200;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-outline {
+  @apply border border-blue-600 text-blue-600 hover:bg-blue-50;
 }
