@@ -21,6 +21,7 @@ jobs:
         with:
           node-version: 20
           cache: npm
+          cache-dependency-path: app/package-lock.json # package-lock.json 파일 경로 지정
 
       - name: List files in app directory # 디버깅 스텝 추가
         run: ls -la ./app
