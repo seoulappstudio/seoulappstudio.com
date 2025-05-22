@@ -11,9 +11,11 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 to-slate-700 text-white flex flex-col items-center justify-center p-8 font-[family-name:var(--font-geist-sans)]">
       <header className="text-center mb-12">
-        <h1 className="text-5xl font-bold mb-4">Seoul App Studio</h1>
-        <p className="text-xl text-slate-300">
-          세상을 바꾸는 혁신적인 아이디어를 현실로 만듭니다.
+        {/* 회사 이름 (가장 크게) */}
+        <h1 className="text-6xl font-bold mb-4">Seoul App Studio</h1>
+        {/* 슬로건 (두 번째 크기) */}
+        <p className="text-2xl font-semibold text-slate-300 mb-4">
+          당신의 아이디어, 우리의 기술로 현실이 되다.
         </p>
       </header>
 
