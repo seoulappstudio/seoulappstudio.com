@@ -5,7 +5,7 @@ export default function Home() {
   const teamMembers = [
     { name: "권기현", role: "CEO & Founder" },
     { name: "오한영", role: "Lead Developer" },
-    { name: "김소진", role: "Digital Marketer" },
+    { name: "김소진", role: "Strategy Marketer" },
   ];
 
   return (

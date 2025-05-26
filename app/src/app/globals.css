@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* 2) CSS 변수 선언 */
 :root {
   --color-bg-primary: #222831;
