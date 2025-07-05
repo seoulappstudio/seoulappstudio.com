@@ -4,10 +4,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 /* 섹션 정보는 컴포넌트 밖 상수로 */
+// 화면 순서 - Hero(서비스들 보기 + 프로젝트 의뢰하기 버튼 두개) -> About Us -> Services -> Portfolio -> Testimonials -> Team -> Contact -> Footer
+
 const navLinks = [
   { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
+  { name: "About Us", href: "#about" },
   { name: "Services", href: "#services" },
+  { name: "Portfolio", href: "#portfolio" },
+  { name: "Testimonials", href: "#testimonials" },
   { name: "Team", href: "#team" },
   { name: "Contact", href: "#contact" },
 ];

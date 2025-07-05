@@ -6,22 +6,23 @@ html {
 
 /* 2) CSS 변수 선언 */
 :root {
-  --color-bg-primary: #222831;
-  --color-bg-secondary: #393e46;
-  --color-accent-primary: #dfd0b8;
-  --color-accent-secondary: #948979;
+  --color-bg-primary: #121212; /* 매우 어두운 배경 */
+  --color-bg-secondary: #1e1e1e; /* 살짝 밝은 배경으로 구분감 제공 */
+
+  --color-accent-primary: #ffffff; /* 메인 텍스트는 선명한 흰색 */
+  --color-accent-secondary: #bbbbbb; /* 보조 텍스트는 흐릿한 회색 */
 
   --font-geist-sans: "Geist Sans", sans-serif;
   --font-geist-mono: "Geist Mono", monospace;
 }
 
-/* 3) 다크 모드 오버라이드 */
+/* 3) 다크 모드 오버라이드
 @media (prefers-color-scheme: dark) {
   :root {
     --color-bg-primary: #000000;
     --color-accent-primary: #ffffff;
   }
-}
+} */
 
 /* 4) 기본 바디 스타일 (CSS 변수 직접 사용) */
 body {
