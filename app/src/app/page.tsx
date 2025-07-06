@@ -37,7 +37,7 @@ const services = [
 ];
 
 const stats = [
-  { label: "월간 사용자", value: 1500 },
+  { label: "월간 사용자", value: 800 },
   { label: "출시 앱", value: 2 },
   { label: "누적 다운로드", value: 500 },
 ];
@@ -154,6 +154,7 @@ export default function Home() {
 
   return (
     <>
+      {/* ───── 1. Header ───── */}
       {/* ───── 2. Hero ───── */}
       <section
         id="hero"
@@ -290,6 +291,9 @@ export default function Home() {
         </div>
       </section>
       {/* <section
+
+      {/* ───── 4. Testimonials ───── */}
+      {/* <section
         id="testimonials"
         className="py-24 bg-bg-primary text-accent-primary text-center"
       >
@@ -310,6 +314,7 @@ export default function Home() {
           ))}
         </div>
       </section> */}
+
       {/* ───── 5. Team ───── */}
       <section id="team" className="py-24 bg-bg-primary text-accent-primary">
         <div className="container mx-auto text-center mb-16">
