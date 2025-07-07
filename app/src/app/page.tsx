@@ -24,16 +24,21 @@ const services = [
     desc: "영상 기반 단체 미팅 앱",
     url: "https://minnow.seoulappstudio.com/",
   },
-  // {
-  //   name: "StudyMate",
-  //   desc: "스터디 매칭 & 관리 앱",
-  //   url: "https://studymate.app",
-  // },
-  // {
-  //   name: "StudyMate",
-  //   desc: "스터디 매칭 & 관리 앱",
-  //   url: "https://studymate.app",
-  // },
+  {
+    name: "Shop In Shop",
+    desc: "예술가와 사장님을 연결합니다.",
+    url: "http://shopinshop.seoulappstudio.com",
+  },
+  {
+    name: "AI News",
+    desc: "매일 쏟아지는 뉴스 AI가 요약해드립니다!",
+    url: "http://ainews.seoulappstudio.com/",
+  },
+  {
+    name: "BestShot AI",
+    desc: "AI가 최고의 추억을 찾아드리는 동안 편안히 쉬세요!",
+    url: "http://bestshot-ai.seoulappstudio.com/",
+  },
 ];
 
 const stats = [
