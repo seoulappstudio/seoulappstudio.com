@@ -43,7 +43,7 @@ const services = [
 
 const stats = [
   { label: "월간 사용자", value: 800 },
-  { label: "출시 앱", value: 2 },
+  { label: "출시 앱", value: 5 },
   { label: "누적 다운로드", value: 500 },
 ];
 
