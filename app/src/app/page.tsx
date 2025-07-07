@@ -37,7 +37,7 @@ const services = [
 ];
 
 const stats = [
-  { label: "월간 사용자", value: 1500 },
+  { label: "월간 사용자", value: 800 },
   { label: "출시 앱", value: 2 },
   { label: "누적 다운로드", value: 500 },
 ];
@@ -82,7 +82,7 @@ const teamMembers = [
       "SEO",
     ],
     profileImage: "/images/profiles/kim-sojin.jpeg",
-    email: "sojin3155@gmail.com>",
+    email: "sojin3155@gmail.com",
     // linkedin: "https://linkedin.com/in/kim-sojin",
   },
 ];
@@ -154,6 +154,7 @@ export default function Home() {
 
   return (
     <>
+      {/* ───── 1. Header ───── */}
       {/* ───── 2. Hero ───── */}
       <section
         id="hero"
@@ -289,7 +290,10 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <section
+      {/* <section
+
+      {/* ───── 4. Testimonials ───── */}
+      {/* <section
         id="testimonials"
         className="py-24 bg-bg-primary text-accent-primary text-center"
       >
@@ -309,9 +313,10 @@ export default function Home() {
             </blockquote>
           ))}
         </div>
-      </section>
+      </section> */}
+
       {/* ───── 5. Team ───── */}
-      <section id="team" className="py-24 bg-bg-secondary text-accent-primary">
+      <section id="team" className="py-24 bg-bg-primary text-accent-primary">
         <div className="container mx-auto text-center mb-16">
           <h2 className="text-3xl font-semibold">팀원 소개</h2>
         </div>
@@ -319,7 +324,7 @@ export default function Home() {
           {teamMembers.map((m) => (
             <div
               key={m.name}
-              className="p-8 bg-bg-primary rounded-2xl shadow-xl hover:shadow-slate-500/40 transition-shadow cursor-pointer hover:scale-105 duration-200"
+              className="p-8 bg-bg-secondary rounded-2xl shadow-xl hover:shadow-slate-500/40 transition-shadow cursor-pointer hover:scale-105 duration-200"
               onClick={() => {
                 setSelectedMember(m);
                 setIsModalOpen(true);
@@ -341,7 +346,7 @@ export default function Home() {
       {/* ───── 6. Contact ───── */}
       <section
         id="contact"
-        className="py-24 bg-bg-primary text-accent-primary text-center"
+        className="py-24 bg-bg-secondary text-accent-primary text-center"
       >
         <h2 className="text-3xl font-semibold mb-6">문의하기</h2>
         <p className="text-lg mb-4">
