@@ -82,7 +82,7 @@ const teamMembers = [
       "SEO",
     ],
     profileImage: "/images/profiles/kim-sojin.jpeg",
-    email: "sojin3155@gmail.com>",
+    email: "sojin3155@gmail.com",
     // linkedin: "https://linkedin.com/in/kim-sojin",
   },
 ];
